@@ -2,7 +2,7 @@
 
 Provide a network configuration to yours minions
 
-### Put your IP Address in Pillar
+### Put your configuration in Pillar
 ```
 db1:
   eth0: 10.0.0.2
@@ -19,3 +19,4 @@ salt '*' state.sls network
 ```
 
 This state actually work on Debian (all version I think).
+I use it only with **eth0**, for sure, you can add other interfaces.
