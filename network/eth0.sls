@@ -15,4 +15,4 @@ routes:
       - name: default
         ipaddr: 0.0.0.0
         netmask: 0.0.0.0
-        gateway: 192.168.1.1
+        gateway: {{ pillar['gateway_eth0'] }}
