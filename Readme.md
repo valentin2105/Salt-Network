@@ -19,4 +19,5 @@ salt '*' state.sls network
 ```
 
 This state actually work on Debian (all version I think).
-I use it only with **eth0**, for sure, you can add other interfaces.
+
+I use it only for **eth0** but you can easily add other interfaces.
