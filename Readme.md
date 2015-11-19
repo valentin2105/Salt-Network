@@ -13,7 +13,7 @@ netmask_eth0: 255.255.0.0
 gateway_eth0: 10.0.0.1
 ```
 
-### Execute the State
+### Apply the State
 ```
 salt '*' state.sls network
 ```
