@@ -5,7 +5,7 @@ eth0:
     - enabled: True
     - type: eth
     - proto: none
-    - ipaddr: {{ salt['pillar.get'](host_server)['eth0'] }}
+    - ipaddr: {{ salt['pillar.get']('addr_eth0')[host_server] }}
     - netmask: {{ pillar['netmask_eth0'] }}
 
 routes:
