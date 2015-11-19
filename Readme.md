@@ -4,13 +4,14 @@ Provide a network configuration to yours minions
 
 ### Put your configuration in Pillar
 ```
-db1:
-  eth0: 10.0.0.2
-db2:
-  eth0: 10.0.0.3
+address_eth0:
+  web1: 192.168.1.121
+  web2: 192.168.1.122
+  db1: 192.168.1.123
+  db2: 192.168.1.124
   
-netmask_eth0: 255.255.0.0
-gateway_eth0: 10.0.0.1
+netmask_eth0: 255.255.255.0
+gateway_eth0: 192.168.1.1
 ```
 
 ### Apply the State
